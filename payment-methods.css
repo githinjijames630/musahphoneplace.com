@@ -1,0 +1,32 @@
+.payment-method-list {
+  display: grid;
+  gap: 8px;
+}
+
+.payment-method-entry {
+  display: block;
+}
+
+.payment-method-entry + .payment-method-entry {
+  padding-top: 8px;
+  border-top: 1px solid #3b3528;
+}
+
+.payment-method-row {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  align-items: end;
+}
+
+.payment-method-row .button {
+  min-height: 42px;
+}
+
+@media (max-width: 600px) {
+  .payment-method-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .payment-method-row [data-remove-method] {
+    grid-column: 1 / -1;
+  }
+}

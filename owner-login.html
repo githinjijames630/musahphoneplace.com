@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Restricted Musah Mobiles owner sign in">
+  <title>Owner Sign In | Musah Mobiles</title>
+  <link rel="icon" type="image/svg+xml" href="musa-mobiles-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="brand-fix.css">
+  <link rel="stylesheet" href="owner-login.css">
+</head>
+<body>
+  <div class="owner-login-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">P</span><span><strong>Musah Mobiles</strong><small>Owner access</small></span></a>
+      <a class="button button-quiet" href="/">Customer store <span>↗</span></a>
+    </header>
+    <main class="owner-login-main">
+      <section class="owner-login-panel" aria-labelledby="ownerLoginTitle">
+        <p class="eyebrow">RESTRICTED AREA</p>
+        <h1 id="ownerLoginTitle">Owner sign in</h1>
+        <p>Sign in to manage inventory, payments, and business records.</p>
+        <form id="ownerLoginForm">
+          <label for="ownerPassword">Owner password</label>
+          <input id="ownerPassword" name="password" type="password" autocomplete="current-password" required autofocus>
+          <button class="button button-dark" type="submit">Continue</button>
+          <p id="ownerLoginStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="owner-login.js"></script>
+</body>
+</html>

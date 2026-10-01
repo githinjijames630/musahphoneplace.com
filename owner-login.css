@@ -1,0 +1,73 @@
+.owner-login-shell {
+  min-height: 100vh;
+  background: #0e0f12;
+  color: #f4f1e8;
+}
+
+.owner-login-main {
+  min-height: calc(100vh - 76px);
+  display: grid;
+  place-items: center;
+  padding: 32px 20px 72px;
+}
+
+.owner-login-panel {
+  width: min(100%, 420px);
+  padding: 32px;
+  border: 1px solid #4b3c20;
+  background: #17181d;
+}
+
+.owner-login-panel h1 {
+  margin: 12px 0;
+  font-size: 30px;
+}
+
+.owner-login-panel > p:not(.eyebrow) {
+  color: #a8a69d;
+  line-height: 1.6;
+}
+
+.owner-login-panel form {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.owner-login-panel label {
+  font-size: 13px;
+}
+
+.owner-login-panel input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #49402b;
+  background: #0d0e11;
+  color: #f4f1e8;
+  font: inherit;
+}
+
+.owner-login-panel input:focus-visible,
+.owner-login-panel button:focus-visible {
+  outline: 2px solid #d6a82e;
+  outline-offset: 2px;
+}
+
+.owner-login-panel button:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+#ownerLoginStatus {
+  min-height: 20px;
+  margin: 0;
+  color: #e5b83e;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .owner-login-panel {
+    padding: 24px;
+  }
+}
